@@ -18,9 +18,17 @@ class SearchViewController: UIViewController {
     @IBAction func OnClickSearchButton(_ sender: Any) {
         SearchText.resignFirstResponder()
         
-        SearchViewController.urlSearch = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=7e12f03d4471ccc294c79ec1f1c2167c&tags=\(SearchText.text!)&format=json&nojsoncallback=1"
+        var dictRoot: NSDictionary?
+        if let path = Bundle.main.path(forResource: "Config", ofType: "plist") {
+            dictRoot = NSDictionary(contentsOfFile: path)
+        }
+        
+        let api_key = dictRoot!["api_key"]
+        
+        SearchViewController.urlSearch = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(api_key!)&tags=\(SearchText.text!)&format=json&nojsoncallback=1"
         
         SearchText.text = ""
+        
         
     }
     

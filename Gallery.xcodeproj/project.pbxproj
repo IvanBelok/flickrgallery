@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185C14AB1E924A1700DFB0F4 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185C14AA1E924A1700DFB0F4 /* Config.plist */; };
 		189C24A81E8D2A7B00205926 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C24A71E8D2A7B00205926 /* SearchViewController.swift */; };
 		18B1559F1E85555C001DAB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B1559E1E85555C001DAB51 /* AppDelegate.swift */; };
 		18B155A41E85555C001DAB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B155A21E85555C001DAB51 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185C14AA1E924A1700DFB0F4 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		189C24A71E8D2A7B00205926 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		18B1559B1E85555C001DAB51 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B1559E1E85555C001DAB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				18B155A51E85555C001DAB51 /* Assets.xcassets */,
 				18B155A71E85555C001DAB51 /* LaunchScreen.storyboard */,
 				18B155AA1E85555C001DAB51 /* Info.plist */,
+				185C14AA1E924A1700DFB0F4 /* Config.plist */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C14AB1E924A1700DFB0F4 /* Config.plist in Resources */,
 				18B155A91E85555C001DAB51 /* LaunchScreen.storyboard in Resources */,
 				18B155A61E85555C001DAB51 /* Assets.xcassets in Resources */,
 				18B155A41E85555C001DAB51 /* Main.storyboard in Resources */,
